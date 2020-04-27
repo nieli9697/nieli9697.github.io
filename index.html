@@ -10,7 +10,7 @@
 <body>
 
     <!--  Navigator  -->
-    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <nav id="nav" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui orange header item">Li Nie</h2>
@@ -43,53 +43,223 @@
                                 <h3 class="ui orange header">Projects</h3>
                             </div>
                             <div class="right aligned column">
-                                <h2 class="class ui orange header m-inline-block m-text-thin"> 3 </h2> Projects in total
+                                <h2 class="class ui orange header m-inline-block m-text-thin"> 10 </h2>&nbsp Projects in total
                             </div>
                         </div>
                     </div>
 
                     <!--listing-->
-                    <div class="ui attached segment" id="projects">
+                    <div class="ui attached orange segment" id="projects">
                         <div class="ui accordion">
-                            <div id="proj_2" class="ui padded vertical segment m-padded-tb-large backend fullstack">
+                            <div id="proj_9" class="ui padded vertical segment m-padded-tb-large fullstack java spring mysql">
                                 <div class="title">
-                                    <h3 class="ui header">HEADER</h3>
-
+                                    <h3 class="ui header">IBM Security Monopoly-style Game Development</h3>
+                                    <p>Capstone Poject</p>
                                 </div>
 
-                                <p class="content">backend fullstack</p>
+                                <p class="content">
+                                    • Developing a Monopoly-style game to introduce MSS market and strengths of IBM
+                                    Security services to customers <br>
+                                    • Implementing the game development with Java, Spring Boot, and MVC design pattern
+                                </p>
 
                                 <div class="ui stackable grid">
                                     <div class="right aligned  column">
-                                        <div class="ui orange basic label">CATEGORY</div>
+                                        <div class="ui large orange basic label">Back End</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div id="proj_1" class="ui padded vertical segment m-padded-tb-large fullstack">
+                            <div id="proj_8" class="ui padded vertical segment m-padded-tb-large fullstack java spring mysql">
                                 <div class="title">
-                                    <h3 class="ui header">HEADER</h3>
+                                    <h3 class="ui header">Apartment Vacation Rental and Sublease Web Development</h3>
                                 </div>
 
-                                <p class="content">fullstack</p>
+                                <p class="content">
+                                    • Developing a website for students’ renting apartment using Spring Boot and MySQL
+                                    with prototype driven development <br>
+                                    • Defined exception handling and log processing;
+                                    rendered static template files after retrieving data with Thymeleaf <br>
+                                    • Built entities and relationships with JPA; realized combined query search with JPA
+                                    Specification <br>
+                                    • Implemented commenting, replying comments, and nested comments display with jQuery AJAX
+                                </p>
 
                                 <div class="ui stackable grid">
                                     <div class="right aligned  column">
-                                        <div class="ui orange basic label">CATEGORY</div>
+                                        <div class="ui large orange basic label">Full Stack</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div id="proj_0" class="ui padded vertical segment m-padded-tb-large">
+                            <div id="proj_7" class="ui padded vertical segment m-padded-tb-large fullstack python django mysql">
+                                <div class="title">
+                                    <h3 class="ui header">Social Media Site Development</h3>
+                                </div>
+
+                                <p class="content">
+                                    • Conducted development following Django MTV pattern, connected with SQLite to receive,
+                                    store, and send back user data <br>
+                                    • Implemented the front-end for users to register,
+                                    log in, create groups, and post blogs with Django template inheritance <br>
+                                    • Utilized Django Form and Model Form to collect information from users and save it
+                                    to models, also realizing validation
+                                </p>
+
+                                <div class="ui stackable grid">
+                                    <div class="right aligned  column">
+                                        <div class="ui large orange basic label">Full Stack</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="proj_6" class="ui padded vertical segment m-padded-tb-large backend python flask mysql">
+                                <div class="title">
+                                    <h3 class="ui header">Store Management Web Development</h3>
+                                </div>
+
+                                <p class="content">
+                                    • Built REST APIs to realize interactions between client and server and stored objects
+                                    to relational database with flask <br>
+                                    • Processed the interactions with advanced request parsing for JSON payload and
+                                    conducted proper error control <br>
+                                    • Realized functions to allow for authentication, user log in and log out, token
+                                    refreshing, and blacklisting with JWT
+                                </p>
+
+                                <div class="ui stackable grid">
+                                    <div class="right aligned  column">
+                                        <div class="ui large orange basic label">Back End</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="proj_5" class="ui padded vertical segment m-padded-tb-large data ml python">
+                                <div class="title">
+                                    <h3 class="ui header">Daily Activity Lab, UT Austin</h3>
+                                    <p>Research Intern</p>
+                                </div>
+
+                                <p class="content">
+                                    • Wrote Python scripts to address data wrangling for messy raw data, including
+                                    unifying time structure, combining human- made labels and sensor-generated time slots,
+                                    and realizing automatically processing data across all participants’ folders <br>
+                                    • Visualized the waveform, spectrogram, and data labels for baby cry and fussing audio
+                                    data using matplotlib and librosa <br>
+                                    • Conducted preprocessing and framing on wav files and then extracted numerical audio
+                                    features for cry/fuss classification
+                                </p>
+
+                                <div class="ui stackable grid">
+                                    <div class="right aligned  column">
+                                        <div class="ui large orange basic label">Data Analytics</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="proj_4" class="ui padded vertical segment m-padded-tb-large data ml python">
+                                <div class="title">
+                                    <h3 class="ui header">Natural Language Processing Employee Review Analysis</h3>
+                                    <p>Data Cleaning and Machine Learning Analysis</p>
+                                </div>
+
+                                <p class="content">
+                                    • Preprocessed 60k+ employee reviews with different data types using Python, conducted
+                                    topic modeling with Latent Dirichlet Allocation and Latent Semantic Analysis models,
+                                    and made interactive visualization for the extracted topics<br>
+                                    • Built multiple linear regression model to analyze the importance of typical topics
+                                    among employee reviews, utilizing Batch Gradient Descent and Normal Equation to train
+                                    the data and get results with minimum error
+                                </p>
+
+                                <div class="ui stackable grid">
+                                    <div class="right aligned  column">
+                                        <div class="ui large orange basic label">Data Analytics</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="proj_3" class="ui padded vertical segment m-padded-tb-large data ml python">
+                                <div class="title">
+                                    <h3 class="ui header">Computer Vision and Text Detection Exploration</h3>
+                                    <p>Machine Learning Analysis</p>
+                                </div>
+
+                                <p class="content">
+                                    • Created a multi-modal (CV + NLP) classification system to predict whether a visual
+                                    question is answerable or not <br>
+                                    • Defined a feature representation using image and question based features, applied
+                                    PCA to reduce feature dimensions <br>
+                                    • Trained Gaussian Naive Bayes, Logistic Regression, and SVM models for classification,
+                                    reaching a 70% accuracy <br>
+                                    • Reimplemented and modified a text detector to improve evaluation performance by 5%
+                                    by reducing shrinkage coefficients
+                                </p>
+
+                                <div class="ui stackable grid">
+                                    <div class="right aligned  column">
+                                        <div class="ui large orange basic label">Data Analytics</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="proj_2" class="ui padded vertical segment m-padded-tb-large data python mysql">
+                                <div class="title">
+                                    <h3 class="ui header">Data Wrangling Analysis</h3>
+                                    <p>Raw Data Cleaning and DB Design</p>
+                                </div>
+
+                                <p class="content">
+                                    • Wrote Python scripts with csv library to clean raw data, including breaking down
+                                    rows, unifying time and table structure <br>
+                                    • Designed and implemented the database based on the cleaned data; used Python to
+                                    connect to the database server, writing SQL to realize operations, address hierarchical
+                                    location matching issues, and get query results
+                                </p>
+
+                                <div class="ui stackable grid">
+                                    <div class="right aligned  column">
+                                        <div class="ui large orange basic label">Data Analytics</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="proj_1" class="ui padded vertical segment m-padded-tb-large backend c#">
                                 <div class="title">
                                     <h3 class="ui header">Information Systems Design and Implementation Project</h3>
                                 </div>
 
-                                <p class="content">description......</p>
+                                <p class="content">
+                                    • Implemented GUI information management systems in C/S and B/S architectures with
+                                    C# and .Net<br>
+                                    • Realized user management, entity management, system log management, and “CRUD”
+                                    interactions with DB
+                                </p>
 
                                 <div class="ui stackable grid">
                                     <div class="right aligned  column">
-                                        <div class="ui orange basic label">CATEGORY</div>
+                                        <div class="ui large orange basic label">Back End</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="proj_0" class="ui padded vertical segment m-padded-tb-large data python ml">
+                                <div class="title">
+                                    <h3 class="ui header">Refined Oil Retail Network Development</h3>
+                                    <p>Undergraduate Research Assistant</p>
+                                </div>
+
+                                <p class="content">
+                                    • Proposed multi-dimensional model for data integration to observe sales and operation
+                                    indicators of gas stations<br>
+                                    • Implemented a data analysis framework using Power BI for marketing evaluation to
+                                    generate insights for future strategies • Reached a 93% accuracy of classifying
+                                    potentially acquired gas stations by applying KNN model
+                                </p>
+
+                                <div class="ui stackable grid">
+                                    <div class="right aligned  column">
+                                        <div class="ui large orange basic label">Data Analytics</div>
                                     </div>
                                 </div>
                             </div>
@@ -141,16 +311,28 @@
                         </div>
 
                         <div class="ui orange segment">
-                            <a href="#" target="_blank" class="ui orange basic left pointing label m-margin-tb">
-                                Tag1 <div class="detail">1</div>
+                            <a href="#" class="ui orange basic left pointing label m-margin-tb">
+                                Java <div class="detail">1</div>
                             </a>
-                            <a href="#" target="_blank" class="ui orange basic left pointing label m-margin-tb">
-                                Tag1 <div class="detail">1</div>
+                            <a href="#" class="ui orange basic left pointing label m-margin-tb">
+                                Python <div class="detail">1</div>
                             </a>
-                            <a href="#" target="_blank" class="ui orange basic left pointing label m-margin-tb">
-                                Tag1 <div class="detail">1</div>
+                            <a href="#" class="ui orange basic left pointing label m-margin-tb">
+                                MySQL <div class="detail">1</div>
                             </a>
-                            <a href="#" target="_blank" class="ui orange basic left pointing label m-margin-tb">
+                            <a href="#" class="ui orange basic left pointing label m-margin-tb">
+                                Spring Boot <div class="detail">1</div>
+                            </a>
+                            <a href="#" class="ui orange basic left pointing label m-margin-tb">
+                                Django <div class="detail">1</div>
+                            </a>
+                            <a href="#" class="ui orange basic left pointing label m-margin-tb">
+                                Flask <div class="detail">1</div>
+                            </a>
+                            <a href="#" class="ui orange basic left pointing label m-margin-tb">
+                                Machine Learning <div class="detail">1</div>
+                            </a>
+                            <a href="#" class="ui orange basic left pointing label m-margin-tb">
                                 C# <div class="detail">1</div>
                             </a>
 
@@ -163,7 +345,7 @@
     <br><br><br><br>
 
     <!--  Footer  -->
-    <footer class="ui inverted vertical segment m-padded-tb-large">
+    <footer id="footer" class="ui inverted vertical segment m-padded-tb-large">
         <div class="ui center aligned container">
             <a target="_blank" class="m-padded-icon" href="https://github.com/nieli9697">
                 <i class="big github icon"></i>

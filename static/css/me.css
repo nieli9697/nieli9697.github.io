@@ -158,3 +158,10 @@ body {
     -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
 }
+
+.m-footer {
+    width: 100% !important;
+    position: fixed !important;
+    bottom: 0px !important;
+    left: 0px !important;
+}

@@ -27,8 +27,9 @@
         <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
             <i class="sidebar icon"></i>
         </a>
-
     </nav>
+    <br><br>
+
 
     <!--  Content  -->
     <div class="m-container-small m-padded-tb-big">
@@ -82,28 +83,23 @@
     </div>
     <br><br><br><br>
 
+
     <!--  Footer  -->
-    <footer class="ui inverted vertical segment m-padded-tb-large">
-        <div class="ui center aligned container">
-            <a target="_blank" class="m-padded-icon" href="https://github.com/nieli9697">
-                <i class="big github icon"></i>
-            </a>
-            <a target="_blank" class="m-padded-icon" href="https://www.linkedin.com/in/li-nie-2a334a17b/">
-                <i class="big linkedin icon"></i>
-            </a>
-            <i class="big envelope outline icon m-padded-icon"></i>
-            <div class="content m-inline-block">nieli9697@utexas.edu</div>
-            <div class="ui inverted section divider"></div>
-            <h4 class="m-text-thin m-text-spaced m-opicity">Learn as you grow, grow as you learn.</h4>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script>
         $('.menu.toggle').click(function() {
             $('.m-item').toggleClass('m-mobile-hide');
-        })
+        });
+
+        $(function(){
+            $(document).ready(function(){
+
+                $("#footer").load("index.html #footer");
+            });
+        });
     </script>
 </body>
 </html>
