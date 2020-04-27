@@ -1,4 +1,3 @@
-# Hi, welcome!
-<br><br>
+## Hi, welcome!
 
-## This is e-Portfolio for Li Nie. You can check out [here](https://nieli9697.github.io)!
+### This is e-Portfolio for Li Nie. You can check out [here](https://nieli9697.github.io)!

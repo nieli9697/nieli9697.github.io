@@ -121,6 +121,7 @@ body {
 .m-text-large {
     font-weight: 500 !important;
     font-size: medium !important;
+    line-height: 1.5 !important;
 }
 
 .m-text-thin {
