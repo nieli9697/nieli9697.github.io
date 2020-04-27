@@ -56,54 +56,57 @@
                     <a href="#" class="ui orange button" data-filter="fullstack">Fullstack</a>
                     <a class="ui basic orange left pointing label">1</a>
                 </div>
+                <input type="text" id="test">
             </div>
 
             <!--listing-->
-            <div class="ui top attached orange segment">
-                <div class="ui accordion">
-                    <div id="proj_2" class="ui vertical segment m-padded-tb-large m-padded-lr-responsive_small backend fullstack">
-                        <div class="title">
-                            <h3 class="ui header">HEADER</h3>
-                        </div>
+<!--            <div class="ui top attached orange segment">-->
+<!--                <div class="ui accordion">-->
+<!--                    <div id="proj_2" class="ui vertical segment m-padded-tb-large m-padded-lr-responsive_small backend fullstack">-->
+<!--                        <div class="title">-->
+<!--                            <h3 class="ui header">HEADER</h3>-->
+<!--                        </div>-->
 
-                        <p class="content">backend fullstack</p>
+<!--                        <p class="content">backend fullstack</p>-->
 
-                        <div class="ui stackable grid">
-                            <div class="right aligned  column">
-                                <div class="ui orange basic label">CATEGORY</div>
-                            </div>
-                        </div>
-                    </div>
+<!--                        <div class="ui stackable grid">-->
+<!--                            <div class="right aligned  column">-->
+<!--                                <div class="ui orange basic label">CATEGORY</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                    <div id="proj_1" class="ui vertical segment m-padded-tb-large m-padded-lr-responsive_small backend">
-                        <div class="title">
-                            <h3 class="ui header">HEADER</h3>
-                        </div>
+<!--                    <div id="proj_1" class="ui vertical segment m-padded-tb-large m-padded-lr-responsive_small backend">-->
+<!--                        <div class="title">-->
+<!--                            <h3 class="ui header">HEADER</h3>-->
+<!--                        </div>-->
 
-                        <p class="content">backend</p>
+<!--                        <p class="content">backend</p>-->
 
-                        <div class="ui stackable grid">
-                            <div class="right aligned  column">
-                                <div class="ui orange basic label">CATEGORY</div>
-                            </div>
-                        </div>
-                    </div>
+<!--                        <div class="ui stackable grid">-->
+<!--                            <div class="right aligned  column">-->
+<!--                                <div class="ui orange basic label">CATEGORY</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                    <div id="proj_0" class="ui vertical segment m-padded-tb-large m-padded-lr-responsive_small fullstack">
-                        <div class="title">
-                            <h3 class="ui header">HEADER</h3>
-                        </div>
+<!--                    <div id="proj_0" class="ui vertical segment m-padded-tb-large m-padded-lr-responsive_small fullstack">-->
+<!--                        <div class="title">-->
+<!--                            <h3 class="ui header">HEADER</h3>-->
+<!--                        </div>-->
 
-                        <p class="content">fullstack</p>
+<!--                        <p class="content">fullstack</p>-->
 
-                        <div class="ui stackable grid">
-                            <div class="right aligned  column">
-                                <div class="ui orange basic label">CATEGORY</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--                        <div class="ui stackable grid">-->
+<!--                            <div class="right aligned  column">-->
+<!--                                <div class="ui orange basic label">CATEGORY</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <div id="projects"></div>
         </div>
     </div>
     <br><br><br><br>
@@ -135,7 +138,17 @@
             $('.m-item').toggleClass('m-mobile-hide');
         });
 
+        $(function(){
+            $(document).ready(function(){
+                $("#projects").load("index.html #projects",function(){//加载完成后设置高亮
+                    $('.ui.accordion').accordion();
+                });
+            });
+        });
+
         $('.ui.accordion').accordion();
+
+
     </script>
 
 </body>
